@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "flashlight"
+version = "1.0.0"
+displayName = "Realistic Flashlight"
+authors = "neila (original Forge mod); NeoForge port"
+description = '''A realistic flashlight you switch on and off with a key (F by default): your beam pattern projected onto the world with soft shadows.'''
+
+[[mixins]]
+config = "flashlight.client.mixins.json"
+
+[[dependencies.flashlight]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.flashlight]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,16 @@
+{
+	"key.categories.flashlight": "Flashlight",
+	"key.flashlight.toggle": "Toggle Flashlight",
+	"key.flashlight.settings": "Flashlight Settings",
+	"flashlight.config.title": "Flashlight Settings",
+	"flashlight.config.beam_size": "Beam size",
+	"flashlight.config.beam_size.value": "%s°",
+	"flashlight.config.flicker": "Flicker",
+	"flashlight.config.flicker_rate": "Flicker rate",
+	"flashlight.config.flicker_rate.value": "%s per minute",
+	"flashlight.config.shadows": "Shadows",
+	"flashlight.config.shadows.0": "Off",
+	"flashlight.config.shadows.1": "Low",
+	"flashlight.config.shadows.2": "High",
+	"flashlight.config.dust": "Beam dust"
+}

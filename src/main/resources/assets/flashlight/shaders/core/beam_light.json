@@ -1,0 +1,41 @@
+{
+	"blend": {
+		"func": "add",
+		"srcrgb": "one",
+		"dstrgb": "one"
+	},
+	"vertex": "flashlight:beam_light",
+	"fragment": "flashlight:beam_light",
+	"attributes": ["Position", "Color", "UV0"],
+	"samplers": [
+		{ "name": "Sampler0" },
+		{ "name": "Sampler1" },
+		{ "name": "Sampler2" }
+	],
+	"uniforms": [
+		{ "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] },
+		{ "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] },
+		{ "name": "BeamOrigin", "type": "float", "count": 3, "values": [0, 0, 0] },
+		{ "name": "BeamDir", "type": "float", "count": 3, "values": [0, 0, -1] },
+		{ "name": "BeamU", "type": "float", "count": 3, "values": [1, 0, 0] },
+		{ "name": "BeamV", "type": "float", "count": 3, "values": [0, 1, 0] },
+		{ "name": "TanSpot", "type": "float", "count": 1, "values": [0.42] },
+		{ "name": "LensRadius", "type": "float", "count": 1, "values": [0.035] },
+		{ "name": "Contrast", "type": "float", "count": 1, "values": [2.0] },
+		{ "name": "EdgeSoften", "type": "float", "count": 1, "values": [0.65] },
+		{ "name": "EdgeStart", "type": "float", "count": 1, "values": [0.45] },
+		{ "name": "Gain", "type": "float", "count": 1, "values": [2.3] },
+		{ "name": "Glow", "type": "float", "count": 1, "values": [0.16] },
+		{ "name": "LightColor", "type": "float", "count": 3, "values": [1.0, 0.975, 0.94] },
+		{ "name": "ShadowEnabled", "type": "float", "count": 1, "values": [0.0] },
+		{ "name": "ShadowOrigin", "type": "float", "count": 3, "values": [0, 0, 0] },
+		{ "name": "ShadowDir", "type": "float", "count": 3, "values": [0, 0, -1] },
+		{ "name": "ShadowU", "type": "float", "count": 3, "values": [1, 0, 0] },
+		{ "name": "ShadowV", "type": "float", "count": 3, "values": [0, 1, 0] },
+		{ "name": "ShadowAngle", "type": "float", "count": 1, "values": [0.5] },
+		{ "name": "ShadowRange", "type": "float", "count": 1, "values": [64.0] },
+		{ "name": "ShadowSize", "type": "float", "count": 1, "values": [40.0] },
+		{ "name": "FogStart", "type": "float", "count": 1, "values": [0.0] },
+		{ "name": "FogEnd", "type": "float", "count": 1, "values": [1.0] }
+	]
+}
