@@ -371,7 +371,7 @@ public final class BeamRenderer {
    }
 
    private static void drawSpot(BeamRenderer.Beam b, Vec3 cam, Matrix4f m, ShadowMap shadows, float brightness) {
-      BufferBuilder bb = Tesselator.getInstance().begin(Mode.QUADS, DefaultVertexFormat.POSITION_COLOR_TEX);
+      BufferBuilder bb = Tesselator.getInstance().begin(Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
 
       for (int i = 0; i < SPOT.size(); i += 9) {
          bb.addVertex(m, SPOT.getFloat(i), SPOT.getFloat(i + 1), SPOT.getFloat(i + 2))

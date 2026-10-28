@@ -47,7 +47,7 @@ public class FlashlightModClient {
       modBus.addListener((RegisterShadersEvent event) -> {
          try {
             event.registerShader(
-               new ShaderInstance(event.getResourceProvider(), FlashlightMod.id("beam_light"), DefaultVertexFormat.POSITION_COLOR_TEX),
+               new ShaderInstance(event.getResourceProvider(), FlashlightMod.id("beam_light"), DefaultVertexFormat.POSITION_TEX_COLOR),
                program -> BeamRenderer.shader = program
             );
          } catch (IOException e) {

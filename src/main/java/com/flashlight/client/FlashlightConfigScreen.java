@@ -58,8 +58,8 @@ public class FlashlightConfigScreen extends Screen {
       );
       this.rate.active = this.config.flicker;
       this.addRenderableWidget(
-         CycleButton.builder(q -> Component.translatable("flashlight.config.shadows." + q))
-            .withValues(new Integer[]{0, 1, 2})
+         CycleButton.<Integer>builder(q -> Component.translatable("flashlight.config.shadows." + q))
+            .withValues(0, 1, 2)
             .withInitialValue(this.config.shadowQuality)
             .create(x, y + 72, 220, 20, Component.translatable("flashlight.config.shadows"), (button, q) -> this.config.shadowQuality = q)
       );
